@@ -30,6 +30,8 @@
         android:name="com.udacity.shoestore.ui.InstructionFragment"
         android:label="@string/app_name"
         tools:layout="@layout/fragment_instruction" >
+
+        <!-- Navigation from list screen is done to login screen directly on back press -->
         <action
             android:id="@+id/action_instructionFragment_to_shoeListFragment"
             app:destination="@id/shoeListFragment"
