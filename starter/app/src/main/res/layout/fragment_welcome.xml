@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- ConstraintLayout is used as top level container since it allows flexible design, design complex views, we can customize placement of views and removes nested views hierarchy -->
+<!-- here we can design all our views (buttons/text views) using ConstraintLayout -->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"

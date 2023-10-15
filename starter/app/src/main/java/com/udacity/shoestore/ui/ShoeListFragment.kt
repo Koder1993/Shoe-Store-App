@@ -46,7 +46,7 @@ class ShoeListFragment : Fragment() {
         }
     }
 
-    private fun addNewViews(shoeList: MutableList<Shoe>?) {
+    private fun addNewViews(shoeList: List<Shoe>?) {
         shoeList?.let { list ->
             list.forEach {
                 val view = layoutInflater.inflate(R.layout.shoe_item, null)
@@ -71,5 +71,10 @@ class ShoeListFragment : Fragment() {
             R.id.logout_menu -> findNavController().navigate(ShoeListFragmentDirections.actionShoeListFragmentToLoginFragment())
         }
         return super.onOptionsItemSelected(item)
+    }
+
+    override fun onDestroyView() {
+        _binding = null
+        super.onDestroyView()
     }
 }

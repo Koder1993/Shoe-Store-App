@@ -3,6 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- ConstraintLayout is used as top level container since it allows flexible design, design complex views, we can customize placement of views and removes nested views hierarchy -->
+    <!-- here we can design all our views using ConstraintLayout, LinearLayout (vertical arrangement of list items) within ScrollView is used to implement scrolling in case many items are present -->
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

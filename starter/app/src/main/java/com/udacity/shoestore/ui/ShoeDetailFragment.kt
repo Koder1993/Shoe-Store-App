@@ -26,15 +26,8 @@ class ShoeDetailFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         _binding = FragmentShoeDetailBinding.inflate(inflater, container, false)
-
-        binding.save.setOnClickListener {
-            shoeViewModel.addNewShoe(
-                binding.shoeNameEditText.text.toString(),
-                binding.shoeCompanyEditText.text.toString(),
-                binding.shoeSizeEditText.text.toString(),
-                binding.shoeDescriptionEditText.text.toString(),
-            )
-        }
+        binding.viewModel = shoeViewModel
+        binding.shoe = shoeViewModel.createDefaultShoe()
 
         binding.cancel.setOnClickListener {
             findNavController().popBackStack()

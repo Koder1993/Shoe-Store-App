@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <layout>
+    <!-- Using CoordinatorLayout as top level decor here since  it is recommended for AppBar/Toolbar implementations as it provides many different interactions within a single parent and those views can also interact with one another -->
+    <!-- ConstraintLayout is unnecessary here, CoordinatorLayout is more suited -->
     <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
